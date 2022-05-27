@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+
 }
 html{
     scroll-behavior: smooth;
@@ -276,11 +277,13 @@ h6{
 }
 .plan{
     display: flex;
+    border: 1px solid darkgray;
     flex-direction: column;
     width: 30%;
     text-align: center;
     padding: 0 32px;
     margin-top: 64px;
+    border-radius: 10px;
 }
 .plan__title{
     font-size: 20px;
@@ -292,9 +295,14 @@ h6{
 .plan__price{
     font-size: 48px;
     font-weight: 700;
+    margin: 16px 0;
+}
+.perk__title{
+    margin: 16px 0;
 }
 .price{
     padding: 16px 0;
+    margin-top: 32px;
 }
 .testimonial{
     display: flex;
@@ -424,4 +432,69 @@ h6{
     width: 20%;
     display: flex;
     flex-direction: column;
+    padding-left: 24px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    background-color: #0f50c7;
+    color: white;
+}
+.footer__link, .figure__img--wrapper{
+    color: white;
+}
+.figure__img--wrapper{
+    opacity: 0.9;
+}
+.footer__link:hover{
+    color: white;
+}
+.footer__link{
+    margin-bottom: 16px;
+}
+.footer__para{
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+hr{
+    margin: 64px 0;
+    opacity: 0.9;
+
+}
+.perks__line{
+    margin: 32px 0;
+}
+.plan__button{
+    margin-bottom: 32px;
+    padding: 20px 60px;
+}
+.plan__blue{
+    background-color: #0f50c7;
+    color: white;
+}
+.plan__button--1{
+    background-color: #75ded2;
+    opacity: 1;
+    font-weight: 700;
+}
+.plan__button--2{
+    background-color: white;
+    opacity: 1;
+    color: #0f50c7;
+    font-weight: 700;
+}
+.plan__button--2:hover{
+    color: #0f50c7;
+}
+.plan__button--3{
+    background-color: #fb9595;
+    opacity: 1;
+    font-weight: 700;
+}
+.plan__perk{
+    margin-bottom: 16px;
+    text-align: center;
 }
