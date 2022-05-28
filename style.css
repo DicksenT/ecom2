@@ -150,7 +150,9 @@ h6{
     width: 360px;
 }
 .feature__img{
-    width: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
 
 }
 .features__wrapper{
@@ -162,8 +164,7 @@ h6{
 .feature__title{
     font-size: 24px;
     font-weight: 900;
-    margin: 12px 0;
-
+    margin-bottom: 8px;
 }
 .title__feature{
     font-size: 48px;
@@ -179,7 +180,9 @@ h6{
 .feature__img-wrapper{
     border: 1px solid #516486;
     border-radius: 50%;
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -196,8 +199,6 @@ h6{
     width: 30%;
     margin-top: 36px;
     display: flex;
-
-
 }
 .feature__para{
     line-height: 1.5;
@@ -206,6 +207,7 @@ h6{
 .description__title{
     display: flex;
     flex-direction: column;
+    margin-left: 12px;
 }
 .quality__description{
     width: 50%;
@@ -308,6 +310,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .testimonial__img--wrapper{
     width: 50%;
@@ -341,7 +344,10 @@ h6{
 .people__testimonial{
     position: relative;
     margin-top: 24px;
+    display: none;
+    animation: slide .4s horizontal;
 }
+
 .testimonial__position{
     position: absolute;
 }
@@ -352,6 +358,23 @@ h6{
 }
 .people__testimonials{
     display: flex;
+}
+@keyframes slide{
+    0%{
+        transform:translateX(-500px);
+    }
+}
+.people__testimonial > *{
+    animation: keyslide .2s horizontal;
+}
+@keyframe keyslide{
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+}
+.people__testimonial--active{
+    display: inline;
 }
 .testimonial__wrapper{
     display: flex;

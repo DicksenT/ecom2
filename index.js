@@ -1,19 +1,13 @@
-var slide = document.getElementById("slide");
-var leftarrow = document.getElementById("leftarrow");
-var rightarrow = document.getElementById("rightarrow");
+let slides = document.querySelectorAll('.people__testimonial');
+let index = 0;
 
-let y = 0;
-
-leftarrow.onclick = function(){
-    if(y > -300){
-    y = y - 300;
-    slide.style.right = y + "px"
-    }
+function next(){
+    slides[index].classList.remove('people__testimonial--active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('people__testimonial--active');
 }
-rightarrow.onclick = function(){
-    if(y > 0){
-    y = y + 300;
-    slide.style.right = y + "px"
-    }
+function prev(){
+    slides[index].classList.remove('people__testimonial--active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('people__testimonial--active');
 }
-    

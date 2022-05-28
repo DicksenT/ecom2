@@ -94,7 +94,7 @@
                         <span class="feature__img-wrapper">
                             <img src="/asset/custom.svg" class="feature__img" alt="">
                         </span>
-                        <div>
+                        <div class="description__title">
                         <h5 class="feature__title">Customizeable</h5>
                         <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
                         </div>
@@ -103,7 +103,7 @@
                             <span class="feature__img-wrapper">
                                 <img src="/asset/reliable.svg" class="feature__img" alt="">
                             </span>
-                            <div>
+                            <div class="description__title">
                             <h5 class="feature__title">Reliable</h5>
                             <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
                             </div>
@@ -112,7 +112,7 @@
                                 <span class="feature__img-wrapper">
                                     <img src="/asset/fast.svg" class="feature__img" alt="">
                                 </span>
-                                <div>
+                                <div class="description__title">
                                 <h5 class="feature__title">Fast</h5>
                                 <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
                                 </div>
@@ -121,7 +121,7 @@
                                     <span class="feature__img-wrapper">
                                         <img src="/asset/easy.svg" class="feature__img" alt="">
                                     </span>
-                                    <div>
+                                    <div class="description__title">
                                     <h5 class="feature__title">Easy</h5>
                                     <p class="feature__para">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
                                     </div>
@@ -295,7 +295,7 @@
                         <h1 class="title__feature">Our Clients <span class="text--blue">Love Us.</span></h1>
                         <p class="feature__description test__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
                         <div class="people__testimonials">
-                        <div class="people__testimonial" id="slide">
+                        <div class="people__testimonial people__testimonial--active" id="slide">
                             <i class="fa-solid fa-star icon__color"></i>
                             <i class="fa-solid fa-star icon__color"></i>
                             <i class="fa-solid fa-star icon__color"></i>
@@ -315,13 +315,14 @@
                             </div>
                                     
                             <div class="btn">
-                                <i class="fa-regular fa-circle-left btn__click" id="leftarrow"></i>
-                                <i class="fa-regular fa-circle-right btn__click" id="rightarrow"></i>
+                                <i class="fa-regular fa-circle-left btn__click" id="leftarrow" onclick="prev()"></i>
+                                <i class="fa-regular fa-circle-right btn__click" id="rightarrow" onclick="next()"></i>
                             </div>
                         </div>
                         </div>
                         
                         <div class="people__testimonial" id="slide">
+                            <div class="testimonial__para">
                             <i class="fa-solid fa-star icon__color"></i>
                             <i class="fa-solid fa-star icon__color"></i>
                             <i class="fa-solid fa-star icon__color"></i>
@@ -329,7 +330,8 @@
                             <i class="fa-solid fa-star icon__color"></i>
                             <p class="plan__title testimonial_position test__title">Love The Developer Experience And Design Principles!</p>
                             <p class="feature__description test__para testimonial_position">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariautr. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nim ad minim veniam, quis nostrud exercitation ullamco</p>
-                            <div class="testimonial__wrapper">
+                        </div>
+                            <div class="testimonial__wrapper"> 
                                 <div class="photo__names">
                             <figure class="img__testimonial--wrapper testimonial_position">
                                 <img src="/asset/adamavif.avif" class="img__testimonial" alt="">
@@ -340,8 +342,8 @@
                             </div>
                                 </div>
                             <div class="btn">
-                                <i class="fa-regular fa-circle-left btn__click" id="leftarrow"></i>
-                                <i class="fa-regular fa-circle-right btn__click" id="rightarrow"></i>
+                                <i class="fa-regular fa-circle-left btn__click" id="leftarrow" onclick="prev()"></i>
+                                <i class="fa-regular fa-circle-right btn__click" id="rightarrow" onclick="next()"></i>
                             </div>
                         </div>
                         </div>
