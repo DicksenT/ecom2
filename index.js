@@ -11,3 +11,9 @@ function prev(){
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('people__testimonial--active');
 }
+function openMenu(){
+    document.body.classList += " menu--open"
+}
+function closeMenu(){
+    document.body.classList.remove('menu--open')
+}

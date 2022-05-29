@@ -21,27 +21,56 @@
                     
                         <ul class="nav__links">
                             <li class="nav__link--wrapper">
-                                <a href="" class="nav__link nav__link--hover">About</a>
+                                <a href="#" class="nav__link nav__link--hover">About</a>
                             </li>
                             <li class="nav__link--wrapper">
-                                <a href="" class="nav__link nav__link--hover">Blog</a>
+                                <a href="#" target="_blank" class="nav__link nav__link--hover">Blog</a>
                             </li>
                             <li class="nav__link--wrapper">
-                                <a href="" class="nav__link nav__link--hover">Pricing</a>
+                                <a href="#pricing" class="nav__link nav__link--hover">Pricing</a>
                             </li>
                             <li class="nav__link--wrapper">
-                                <a href="" class="nav__link nav__link--hover">Contact Us</a>
+                                <a href="#contact" class="nav__link nav__link--hover">Contact Us</a>
                             </li>
                             <li class="nav__link--wrapper">
-                                <a href="" class="nav__link nav__link--hover">Login</a>
+                                <a href="#" target="_blank" class="nav__link nav__link--hover">Login</a>
                             </li>
                             <li class="nav__link--wrapper">
-                                <a href="" class="nav__link nav__link--primary">Sign Up</a>
+                                <a href="#" target="_blank" class="nav__link nav__link--primary">Sign Up</a>
                             </li>
-                        </li>
+                        </ul>
                 </div>
                 
             </div>
+            <button class="btn__menu">
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul>
+                    <li class="menu__list">
+                        <a href="#" onclick="closeMenu()">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" target="_blank" onclick="closeMenu()">Blog</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#pricing" onclick="closeMenu()">Pricing</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#contact" onclick="closeMenu()">Contact Us</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" target="_blank" onclick="closeMenu()">Login</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" target="_blank" class="nav__link--primary" onclick="closeMenu()">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         </nav>
         <header>
             <div class="container">
@@ -134,13 +163,13 @@
     <section id="quality">
         <div class="container">
             <div class="row">
-                <div class="quality">
+                <div class="quality quality__rev">
                     <div class="quality__description">
                         <h4 class="text--blue title">QUALITY WORK</h4>
                         <h1 class="title__feature">Designed & Developed by <span class="text--blue">Professionals.</span> </h1>
                         <p class="quality__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <a href="#" target="_blank">
-                            <button class="nav__link--primary">Learn More</button>
+                            <button class="nav__link--primary quality__button">Learn More</button>
                         </a>
                     </div>
                     <figure class="quality__img--wrapper">
@@ -161,27 +190,29 @@
                 <div class="quality__description">
                     <h4 class="text--blue title">Steps</h4>
                     <h1 class="title__feature step__title">Easy to <span class="text--blue">Get Started.</span> </h1>
-                    <div class="step">
+                <ul class="steps">
+                    <li class="step">
                     <div class="step__number">01</div>
                     <div class="step__description">
                     <h5 class="steps__title">Register</h5>
                     <p class="step__para">Create an account with us using Google or Facebook.</p>
                 </div>
-                </div>
-                <div class="step">
+            </li>
+                <li class="step">
                     <div class="step__number">02</div>
                     <div class="step__description">
                     <h5 class="steps__title">Download</h5>
                     <p class="step__para">Browse and Download the template that you like from the marketplace.</p>
                     </div>
-                </div>
-                <div class="step">
+                </li>
+                <li class="step">
                     <div class="step__number">03</div>
                     <div class="step__description">
                     <h5 class="steps__title">Run</h5>
                     <p class="step__para">Follow the instructions to setup and customize the template to your needs.</p>
                     </div>
-                </div>
+                </li>
+            </ul>
                 </div>
             </div>
             </div>
@@ -196,7 +227,7 @@
                     <h1 class="title__feature">We Always Abide by Our <span class="text--blue">Principles.</span> </h1>
                     <p class="value__description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <a href="#" target="_blank">
-                        <button class="nav__link--primary">Learn More</button>
+                        <button class="nav__link--primary quality__button">Learn More</button>
                     </a>
                 </div>
                 <figure class="quality__img--wrapper">
@@ -416,13 +447,13 @@
                     <img src="/asset/logo.svg" class="nav__treact" alt="">
                     Treact Inc.
                 </figure>
-                <div>
+                <div class="copyright__para">
                     <p>© 2018 Treact Inc. All Rights Reserved.</p>
                 </div>
                 <div class="footer__logo">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook icon"></i>
+                <i class="fa-brands fa-twitter icon"></i>
+                <i class="fa-brands fa-youtube icon"></i>
             </div>
             </div>
                 
