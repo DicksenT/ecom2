@@ -6,6 +6,12 @@
     font-family: 'Inter', sans-serif;
 
 }
+ul{
+    position: relative;
+}
+li{
+    position: relative;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -26,7 +32,7 @@ html{
 #steps,
 #pricing,
 #contact{
-    animation: rightslide 650ms;
+    animation: rightslide 650ms backwards;
 }
 
 img{
@@ -220,6 +226,10 @@ h6{
     font-weight: 900;
     margin-bottom: 8px;
 }
+.subvalue__title{
+    font-size: 20px;
+    font-weight: 700;
+}
 .title__feature{
     font-size: 48px;
     font-weight: 900;
@@ -319,6 +329,7 @@ h6{
     font-size: 16px;
     margin: 24px 0;
 }
+
 .pricing__plans{
     display: flex;
     flex-direction: column;
@@ -446,7 +457,6 @@ h6{
 .photo__names{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .test__title{
     margin: 16px 0;
@@ -577,10 +587,65 @@ hr{
     margin-bottom: 16px;
     text-align: center;
 }
+#navigation{
+    animation: leftslide 650ms backwards;
+}
+.value__subdescription{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subvalue__wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.subvalue__icon{
+    width: 16px;
+    height: 16px;
+    color: #2c6c4e;
+}
+.subvalue{
+    width: 45%;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.subvalue__right{
+    margin-right: 32px;
+}
+.subvalue__img--wrapper{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #9ae6b4;
+    margin-right: 8px;
+}
+.sub__value{
+    background-color: #feb2b2;
+}
+.sub__icon{
+    color: #9b2c2c;
+}
+
 @keyframes rightslide{
     0%{
         opacity: 0;
-        transform: translateX(300px);
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes leftslide{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
     }
     100%{
         opacity: 1;
@@ -649,6 +714,7 @@ hr{
     .quality__description{
         width: 100%;
         flex-direction: column;
+        padding: 0;
     }
     .quality__button{
         margin-bottom: 16px;
@@ -685,5 +751,76 @@ hr{
         align-items: center;
         flex-direction: column;
         text-align: center;
+    }
+    .subvalue__wrapper{
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    .subvalue{
+        width: 100%;
+        text-align: center;
+    }
+    .testimonial__wrapper{
+        justify-content: space-evenly;
+    }
+    .btn__click{
+        font-size: 48px;
+    }
+    .step__description{
+        margin: 0;
+    }
+    
+}
+@media (max-width: 620px){
+    .feature{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        margin: 28px;
+    }
+    .para__contact{
+        margin-bottom: 16px;
+    }
+    .contact__btn{
+        flex-direction: column;
+    }
+    .contact__btn1{
+        margin-bottom: 16px;
+    }
+    .testimonial__wrapper{
+        flex-direction: column;
+    }
+    .photo__names{
+        margin-bottom: 8px;
+    }
+    .img__testimonial--wrapper{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+    .photo__names{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo__name{
+        margin-left: 0;
+    }
+    .btn__big{
+        margin-left: 0;
+    }
+    .contact__para{
+        font-size: 28px;
+        margin-left: 0;
+        padding-left: 0;
     }
 }
